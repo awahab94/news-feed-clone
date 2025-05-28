@@ -7,7 +7,7 @@ import { Search, Home, Users, MessageCircle, Bell, Menu, Plus } from "lucide-rea
 
 export function Header() {
   return (
-    <header className="bg-white shadow-sm border-b sticky top-0 z-50">
+    <header className="bg-white shadow-sm  sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Left Section */}

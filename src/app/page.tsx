@@ -1,7 +1,13 @@
+"use client";
+import { CreatePost } from "@/components/create-post";
 import { Header } from "@/components/header";
 import { Sidebar } from "@/components/side-bar";
 
 export default function Home() {
+  const handleCreatePost = (content: string, image?: string) => {
+    console.log(content, image);
+  };
+
   return (
     <div className="min-h-screen bg-gray-100">
       <Header />
@@ -14,7 +20,7 @@ export default function Home() {
 
           {/* Main Content */}
           <div className="lg:col-span-2 space-y-6">
-            <h1>Main Content</h1>
+            <CreatePost onCreatePost={handleCreatePost} />
           </div>
         </div>
       </div>

@@ -16,7 +16,7 @@ export function Sidebar() {
 
   return (
     <div className="space-y-4">
-      <Card>
+      <Card className="bg-white border-none">
         <CardContent className="p-4">
           <div className="flex items-center space-x-3">
             <Avatar>
@@ -31,7 +31,7 @@ export function Sidebar() {
         </CardContent>
       </Card>
 
-      <Card>
+      <Card className="bg-white border-none">
         <CardContent className="p-2">
           <nav className="space-y-1">
             {menuItems.map(item => (
@@ -45,7 +45,7 @@ export function Sidebar() {
         </CardContent>
       </Card>
 
-      <Card>
+      <Card className="bg-white border-none">
         <CardContent className="p-4">
           <h3 className="font-semibold mb-3 text-black">Online Friends</h3>
           <div className="space-y-3">
