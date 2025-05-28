@@ -3,7 +3,7 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Search, Home, Users, MessageCircle, Bell, Menu, Plus } from "lucide-react";
+import { Search, Home, Users, MessageCircle, Bell, Menu } from "lucide-react";
 
 export function Header() {
   return (
@@ -46,21 +46,20 @@ export function Header() {
           </nav>
 
           <div className="flex items-center space-x-3">
-            <Button size="sm" className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-all duration-200 hidden sm:flex items-center space-x-2">
+            {/* <Button size="sm" className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-all duration-200 hidden sm:flex items-center space-x-2">
               <Plus className="w-4 h-4" />
               <span>New Post</span>
-            </Button>
-
-            <Button variant="ghost" size="sm" className="md:hidden text-gray-600 hover:text-blue-600 hover:bg-gray-100 p-2 rounded-lg transition-all duration-200">
-              <Menu className="w-6 h-6" />
-            </Button>
-
+            </Button> */}
             <div className="relative">
               <Avatar className="cursor-pointer ring-2 ring-transparent hover:ring-blue-200 transition-all duration-200">
                 <AvatarImage src="/placeholder.svg?height=32&width=32" alt="Profile" />
                 <AvatarFallback className="bg-blue-100 text-blue-600 font-semibold">You</AvatarFallback>
               </Avatar>
             </div>
+
+            <Button variant="ghost" size="sm" className=" text-gray-600 hover:text-blue-600 hover:bg-gray-100 p-2 rounded-lg transition-all duration-200 cursor-pointer">
+              <Menu className="w-6 h-6" />
+            </Button>
           </div>
         </div>
       </div>
